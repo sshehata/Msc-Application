@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{Samy Shihata} % Name
+
+\addrfrom{
+\today\\[12pt] % Date
+257 Miami \\ % Address
+Alexandria, Egypt 21111
+}
+
+\phonefrom{(002) 01095357548} % Phone number
+
+\emailfrom{samy.s.shihata@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{To whom it may concern,} % Greeting text
+\closeline{Thank you for your consideration,} % Closing text
+
+\nameto{} % Addressee of the letter above the to address
+
+\addrto{
+EMCL Secretary \\
+International Center for Computational Logic \\
+Department of Computer Science\\
+Technische Universit\"{a}t Dresden \\
+01062 Dresden,
+Germany 
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+  I would like to express my wish to join the Master of Logic program (MSc
+  Logic) of the ILLC starting September 2015.
+  Allow me to provide some information that may further support my application.
+  I am currently a senior Computer Science and Engineering student at the German
+  University in Cairo. My interest in computer science began with learning C at the age of twelve,
+  followed by other languages such as C++, visual basic. I mainly practiced on
+  small projects for my own use.  
+
+  Following high school, I decided to follow a career in computer science. I was
+  offered a partial scholarship to join the Bachelor Program in Computer Science
+  and Engineering of the German University in Cairo.I am currently in my senior
+  year and expected to graduate next semester with highest honors. I am
+  currently ranked the second top student of my class with GPA: $0.89$ . My
+  chosen study track was mainly focused on Logic,  Theory of Computation and
+  Artificial Intelligence. I covered courses of First Order Logic,  Knowledge
+  Representation and Reasoning, Machine Learning,  Analysis and Design of
+  Algorithms and Declarative and Functional
+  programming. During my study, I attended several extra-curricular courses and
+  workshops abroad such as the CHR workshop 2013 in Berlin. These trips were
+  funded by my university as a reward of academic excellence. Finally, I did my
+  Bachelor Project during my stay in Augsburg university as an exchange student,
+  under the supervision of Prof. Dr. Elizabeth Andre. My Thesis was titled the
+  Emotion Classification: Sentimental Analysis over EEG. My stay there was also
+  funded by my university.
+  
+  My main interest in Logic is due to its contribution to the field of
+  Artificial Intelligence. I aspire to join a career in Artificial Intelligence
+  research. I believe it is the key to understanding the most computationally
+  capable construct in existence, the human brain. For that I have become
+  involved with AI research community, as well as taken several internships
+  relating to the field including an internship with Intel Egypt Corporation.
+  Currently, I am part of an effort to start an Artificial Intelligence research
+  group in the German University in Cairo, in which I am mainly responsible of
+  Machine Learning and Data Mining research.
+
+  In order to further pursue my goal, I decided to take a Master's program in
+  Logic. Many breakthroughs in AI are attributed to new
+  developments in logical theory. New generation expert systems rely heavily on
+  logic for reasoning and representing their often very large and complex
+  Knowledge bases. Problems such as planning, natural language processing as
+  well as the abstract concepts of rationality and common sense, all require
+  a strong logical framework to be able to understand and solve.
+
+  After reviewing the top Master's programs in Logic offered around the world, 
+  I find that the ILLC program is the most suited or me. It is known as one of
+  the oldest, most prestigious programs in this discipline.  It was recommended by several of my
+  professors as the top Logic program currently offered, and the recent
+  attention it has received from accreditation committees show the excellent
+  standards of learning it holds. Furthermore, having gone over some of the
+  MoL theses, its clear that the program is research directed encouraging true
+  contributions to the field. I also look forward to being part of the
+  University of Amsterdam, one of the largest and most distinct research
+  University in Europe. Regarding the content of the
+  program, I am most interested in the Logic and Computation track as well as
+  courses such as Game Theory, Proof Theory and Cognitive Modelling.
+
+  In conclusion, I would like to point out that I am a hard working student,
+  eager to learn and will be happy to share my passion towards scientific
+  research should I be given the opportunity to join this program. I believe that I will truly benefit from
+  such an opportunity and in return I would be able to be of benefit to the
+  scientific and research community.
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}
