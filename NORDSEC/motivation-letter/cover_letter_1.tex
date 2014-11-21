@@ -1,13 +1,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plain Cover Letter
 % LaTeX Template
-% Version 1.0 (1/6/13)
+% Version 1.0 (28/5/13)
 %
 % This template has been downloaded from:
 % http://www.LaTeXTemplates.com
 %
 % Original author:
-% Matthew J. Miller
-% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+% Rensselaer Polytechnic Institute 
+% http://www.rpi.edu/dept/arc/training/latex/resumes/
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
@@ -18,78 +19,69 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+\documentclass[11pt]{letter} % Default font size of the document, change to 10pt to fit more text
 
-\usepackage{charter} % Use the Charter font for the document text
+\usepackage{newcent} % Default font is the New Century Schoolbook PostScript font 
+%\usepackage{helvet} % Uncomment this (while commenting the above line) to use the Helvetica font
 
-\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
-\includegraphics[width=0.1\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
-\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+% Margins
+\topmargin=-1in % Moves the top of the document 1 inch above the default
+\textheight=8.5in % Total height of the text on the page before text goes on to the next page, this can be increased in a longer letter
+\oddsidemargin=-10pt % Position of the left margin, can be negative or positive if you want more or less room
+\textwidth=6.5in % Total width of the text, increase this if the left margin was decreased and vice-versa
 
-\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
-\newlfmP{addrfromphone} % Print a phone number under the sender's address
-\newlfmP{addrfromemail} % Print an email address under the sender's address
-\PhrPhone{Phone} % Customize the "Telephone" text
-\PhrEmail{Email} % Customize the "E-mail" text
+\let\raggedleft\raggedright % Pushes the date (at the top) to the left, comment this line to have the date on the right
 
-\lthUiuc % Print the company/institution logo
-
-%----------------------------------------------------------------------------------------
-%	YOUR NAME AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
-
-\namefrom{Samy Shehata} % Name
-
-\addrfrom{
-\today\\[12pt] % Date
-257 Miami \\ % Address
-Alexandria, Egypt 21111
-}
-
-\phonefrom{(002) 01095357548} % Phone number
-
-\emailfrom{samy.s.shihata@gmail.com} % Email address
+\begin{document}
 
 %----------------------------------------------------------------------------------------
-%	ADDRESSEE AND GREETING/CLOSING
+%	ADDRESSEE SECTION
 %----------------------------------------------------------------------------------------
 
-\greetto{To whom it may concern,} % Greeting text
-\closeline{Thank you for your consideration,} % Closing text
-
-\nameto{} % Addressee of the letter above the to address
-
-\addrto{
+\begin{letter}{
 EMCL Secretary \\
 International Center for Computational Logic \\
 Department of Computer Science\\
-Technische Universit\"{a}t Dresden \\
+Technische Universität Dresden \\
 01062 Dresden,
-Germany 
-}
+Germany} 
 
 %----------------------------------------------------------------------------------------
-
-\begin{document}
-\begin{newlfm}
-
-%----------------------------------------------------------------------------------------
-%	LETTER CONTENT
+%	YOUR NAME & ADDRESS SECTION
 %----------------------------------------------------------------------------------------
 
+\begin{center}
+\large\bf Samy Shihata \\ % Your name
+%\vspace{20pt} \hrule height 1pt % If you would like a horizontal line separating the name from the address, uncomment the line to the left of this text
+257 Miami, \\ Alexandria, Egypt 21111 \\ (002) 01095357548 % Your address and phone number
+\end{center} 
+\vfill
+
+\signature{Samy Shihata} % Your name for the signature at the bottom
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT SECTION
+%----------------------------------------------------------------------------------------
+
+\opening{To whom it may concern,} 
+ 
   I would like to express my wish to join the European Master's Program in
   Computational Logic starting 2015.
   Allow me to provide some information that may further support my application.
   I am currently a senior Computer Science and Engineering student at the German
-  University in Cairo.  My interest in computer science began with learning C at the age of twelve,
+  University in Cairo.  I became interested in computer programming started
+  early on. To me, programming was the ability to  materialize an idea
+  using a few lines of code. I found it to be the ideal form of expression. I
+  was also fascinated by the regular technological advances made daily in terms
+  of both software and hardware. I began learning C at the age of twelve,
   followed by other languages such as C++, visual basic. I mainly practiced on
   small projects for my own use.  
 
   Following high school, I decided to follow a career in computer science. I was
   offered a partial scholarship to join the Bachelor Program in Computer Science
-  and Engineering of the German University in Cairo. I am currently in my senior
+  and Engineering of the German University in Cairo.I am currently in my senior
   year and expected to graduate next semester with highest honors. I am
-  currently ranked the second top student of my class with GPA: $0.89/0.7$. My
+  currently ranked the second top student of my class with GPA: $0.89$ . My
   chosen study track was mainly focused on the Theory of Computation and
   Artificial Intelligence. I covered courses of Machine Learning, Knowledge
   Representation and Reasoning, First Order Logic, Analysis and Design of
@@ -119,7 +111,7 @@ Germany
   logic for reasoning and representing their often very large and complex
   Knowledge bases. Problems such as planning, natural language processing as
   well as the abstract concepts of rationality and common sense, all require
-  a strong logical framework to be able to understand and solve.
+  a strong logical framework to be able to understand them.
 
   After reviewing the top universities that offer a Master's Program in
   Computational Logic, I find that the European program is the most suited one
@@ -135,12 +127,15 @@ Germany
   Knowledge into both knowledge representation and Inference.
 
   In conclusion, I would like to point out that I am a hard working student,
-  eager to learn and will be happy to share my passion towards scientific
-  research should I be given the  opportunity to join this program. I believe
-  that I will truly benefit from
+  eager to learn and will be happy to prove my worth should I be given the
+  opportunity to join this program. I believe that I will truly benefit from
   such an opportunity and in return I would be able to be of benefit to the
   scientific and research community.
+
+\closing{Thank you for your consideration,}
+
 %----------------------------------------------------------------------------------------
 
-\end{newlfm}
+\end{letter}
+
 \end{document}

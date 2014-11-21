@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{hyperref}
+\title{Bachelor Thesis \\
+Emotion Recognition: Supervised Classification of EEG}
+\author{Samy Shehata}
+\begin{document}
+\maketitle
+
+\paragraph{\textbf{Supervisor} \\}
+
+Prof. Dr. Elisabeth Andr\'{e}\\
+\href{http://www.informatik.uni-augsburg.de/lehrstuehle/hcm/staff/andre/}
+{http://www.informatik.uni-augsburg.de/lehrstuehle/hcm/staff/andre/} \\
+
+\paragraph{\textbf{Description} \\}
+This thesis aims at investigating the use of EEG signals in classifying a user's emotional state, to prepare for integration into the Augsburg Biosignal Toolbox (AuBT\footnote{A Matlab toolbox for physiological signal analysis. More details at http://www.informatik.uni-augsburg.de/lehrstuehle/hcm/projects/tools/aubt/}). The data corpus is taken from the DEAP (Database for Emotional Analysis using Physiological signals) and used to solve three binary classification problems relating to affective state recognition. First, different approaches for feature extraction and selection are researched. Among those, the method of calculating the PSD (Power Spectrum Density), based on the FFT,  is selected due to its popularity and simplicity of implementation. For classification, three standard classifier are tested for cross comparing accuracy as well as comparison with results reported in previous works. The tests consists of two experiments, the first experiment uses the data for each subject separately for classification, before calculating the average classification accuracy over all subjects. This shows the expected rate of correct classification for a single user. The second experiment includes the entire data of all subjects as a single corpus for classification. This is done to demonstrate the generalizability of an EEG classifier for many users with different EEG patterns. Finally, a new classifier, previously proposed in the literature to be used in EEG classification, is implemented and tested. The thesis concludes with a comparison between the accuracies of tested approaches and future recommendations for further improvements. 
+
+\paragraph{\textbf{Thesis} \\}
+\href{https://www.scribd.com/doc/247041865/Emotion-Recognition-Supervised-Classification-of-EEG}
+{https://www.scribd.com/doc/247041865/Emotion-Recognition-Supervised-Classification-of-EEG}
+
+
+\end{document}

@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter LaTeX Template Version 1.0 (1/6/13)
+%
+% This template has been downloaded from: http://www.LaTeXTemplates.com
+%
+% Original author: Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License: CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft'
+for a left-aligned signature, 'stdletternofrom' to remove the from address,
+'letterpaper' for US letter paper - consult the newlfm class manual for more
+options
+
+\usepackage{charter} % Use the Charter font for the document text
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at
+the top left of the page \makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text \PhrEmail{Email} % Customize
+the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{John Smith} % Name
+
+\addrfrom{ \today\\[12pt]} % Date 123 Broadway \\ % Address City, State 12345 }
+
+\phonefrom{(000) 111-1111} % Phone number
+
+\emailfrom{john@smith.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{To whom it may concern,} % Greeting text \closeline{Sincerely yours,} %
+Closing text
+
+\nameto{To whom it may concern,} % Addressee of the letter above the to address
+
+\addrto{ Recruitment Officer \\ % To address The Corporation \\ 123 Pleasant
+Lane \\ City, State 12345 }
+
+%----------------------------------------------------------------------------------------
+
+\begin{document} 
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+  I would like to express my wish to join the European Master's Program in
+  Computational Logic starting 2015.
+  Allow me to provide some information that may further support my application.
+  I am currently a senior Computer Science and Engineering student at the German
+  Univeristy in Cairo.  I became interesetedin computer programming started
+  early on. To me, programming was the ability to  materialize an idea
+  using a few lines of code. I found it to be the ideal form of expression. I
+  was also fascinated by the regular technological advances made daily in terms
+  of both software and hardware. I began learning C at the age of twelve,
+  followed by other languages such as C++, visual basic. I mainly practiced on
+  small projects for my own use.  
+
+  Following highschool, I decided to follow a career in computer science. I was
+  offered a partial scholorship to join the Bachelor Program in Computer Science
+  and Engineering of the German University in Cairo.I am currently in my senior
+  year and expected to graduate next semester with highest honors. I am
+  currently ranked the second top student of my class with GPA: $0.89$ . My
+  chosen study track was mainly focused on the Theory of Compuation and
+  Artificial Intelligence. I covered courses of Machine Learning, Knowledge
+  Representation and Reasoning, First Order Logic, Analysis and Design of
+  Algorithms and Declaritive and Functional
+  programming. I also included some general courses such as Software Engineering
+  and Computer Graphics. During my study, I attended several extra-curricular courses and
+  workshops abroad such as the CHR workshop 2013 in Berlin. These trips were
+  funded by my university as a reward of acadmeic excellence. Finally, I did my
+  Bachelor Project during my stay in Augsburg university as an exchange student,
+  under the supervision of Prof. Dr. Elizabith Andre. My Thesis was titled the
+  Emotion Classification: Sentimental Analysis over EEG. My stay there was also
+  funded by my university.
+
+  While I was involved in several internships relating to web developement,
+  including a website for the university itself, my main interest have always
+  been Artifical Intelligence. I view research in AI as the gateway towards the
+  most advanced compation device in existance, the human brain. For that I have
+  tried to become part of the AI research community. I have taken several
+  internships relating to the field such as Machine Learning text classification
+  with Intel Egypt. Currently, I am part of an effort to start an Aritifical
+  Intelligence research group in the German University in Cairo, in which I am
+  mainly reponsible of Machine Learning and Data Mining research. In order to
+  pursue a career in AI research, I decided to take a Master's program in
+  Compuational Logic. Many breakthroughs in AI are attributed to new
+  developements in logical theory. New generation expert systems rely heavily on
+  logic for reasoning and representing their often very large and complex
+  Knowledge bases. Problems such as planning, natural language processing as
+  well as the abstract concepts of rationality and common sense, all require
+  a strong logical framework to be able to understand them.
+  
+  
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}
